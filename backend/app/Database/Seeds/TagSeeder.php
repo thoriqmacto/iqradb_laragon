@@ -64,7 +64,8 @@ class TagSeeder extends Seeder
         ];
 
         // Read data from a text file
-        $tagsData = file_get_contents(APPPATH . 'Database/Seeds/Data/tags_20231206.txt');
+        $fileName = 'tags_20231206.txt'; // containing single-quote value
+        $tagsData = file_get_contents(APPPATH . 'Database/Seeds/Data/'.$fileName);
         $tagsArray = explode("\n", $tagsData);
         
         $i=1;
