@@ -210,8 +210,7 @@ class Tags extends Migration
             'spi_loop_id' => [
                 'type' => 'VARCHAR',
                 'constraint' => 30,
-            ],            
-            
+            ]            
         ]);        
         $this->forge->addKey('id', true, true);
         $this->forge->addForeignKey('loop_id', 'tags', 'id');
