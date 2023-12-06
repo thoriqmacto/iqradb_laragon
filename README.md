@@ -14,10 +14,13 @@ This is iQRA db, a web application for instrumentation and control engineer. It 
 ## Todo List
 1. [2023-12-02] Create schema DB (LOOP to TAG) relationship as per windows apps using ORM for first try. 
 1. [2023-12-02] Create CRUD facilities for it.
-1. [2023-12-02] Load instrument index example.
+1. [DONE] Load instrument index example.
 1. [2023-12-02] Create ReactJs page to mimic datatable functionality.
+1. [2023-12-06] Create RESTful CRUD access for TAGS.
+1. [2023-12-06] Create front-end for TAGS using React.
 1. ...
 
 ## Feature Done
 1. [2023-12-02] CodeIgniter 4 installed and ready for development using Laragon environment. 
+1. [2023-12-06] Load instrument index example.
 1. ...
