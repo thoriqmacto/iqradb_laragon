@@ -17,4 +17,6 @@ $routes->post('news', [News::class, 'create']);
 $routes->get('news/(:segment)', [News::class, 'show']);
 
 $routes->get('pages',[Pages::class,'index']);
+
+service('auth')->routes($routes);
 $routes->get('(:segment)',[Pages::class,'view']); */
