@@ -24,12 +24,13 @@ This is iQRA db, a web application for instrumentation and control engineer. It 
 1. [DONE][2023-12-04] Create front-end for TAGS using React (simple react-router).
 1. [2023-12-07] Implement datatable.js as template for table presentation.
 1. [2023-12-07] Install dashboard template.
-1. [2023-12-07] Create USERS and GROUPS table.
-1. [2023-12-07] Create basic authentication for accessing dashboard (USER manage).
-1. [2023-12-07] Create another authentication using one-time password send to email.
+1. [2023-12-07] Create USERS and ROLES table. (*) Possibly change with CodeIgniter Shield 
+1. [2023-12-07] Create basic authentication for accessing dashboard (USER manage). (*) Possibly change with CodeIgniter Shield 
+1. [2023-12-07] Create another authentication using one-time password send to email. (*) Possibly change with CodeIgniter Shield 
 1. [2023-12-07] Implement pdf creation from library.
 1. [2023-12-07] Create page for URV and LRV transmitter calculation.
 1. [2023-12-07] Try deploy to live server (#1 Milestone).
+1. [2023-12-07] Build project based structure with each individual project will have all required tables such as: TAGS, LOOPS, CMS_SYSTEM_NUMBERS, etc.
 1. ...
 
 ## Feature Done
