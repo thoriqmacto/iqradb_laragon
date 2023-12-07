@@ -10,6 +10,7 @@ use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
 
 use App\Filters\Cors;
+use App\Filters\AuthFilter;
 
 class Filters extends BaseConfig
 {
@@ -28,6 +29,7 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'cors'          => Cors::class,
+        'apiauth'       => AuthFilter::class,
     ];
 
     /**
@@ -63,7 +65,7 @@ class Filters extends BaseConfig
      * with a method you don't expect could bypass the filter.
      */
     public array $methods = [
-        'post' => ['csrf'],
+        // 'post' => ['csrf'],
     ];
 
     /**

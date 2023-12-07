@@ -9,6 +9,24 @@ use App\Controllers\News;
  */
 $routes->resource('tags');
 
+// API Routes
+$routes->group("api", ["namespace" => "App\Controllers"], function ($routes) {
+
+    $routes->get("invalid-access", "AuthController::accessDenied");
+
+    // Post
+    $routes->post("register", "AuthController::register");
+
+    // Post
+    $routes->post("login", "AuthController::login");
+
+    // Get
+    $routes->get("profile", "AuthController::profile", ["filter" => "apiauth"]);
+
+    // Get
+    $routes->get("logout", "AuthController::logout", ["filter" => "apiauth"]);
+});
+
 /* $routes->get('/', 'Home::index');
 
 $routes->get('news', [News::class, 'index']);
