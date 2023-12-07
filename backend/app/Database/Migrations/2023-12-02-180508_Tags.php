@@ -5,9 +5,9 @@ namespace App\Database\Migrations;
 use CodeIgniter\Database\Migration;
 
 class Tags extends Migration
-{
+{      
     public function up()
-    {
+    {        
         $this->db->disableForeignKeyChecks();
         $this->forge->addField([
             'id' => [
