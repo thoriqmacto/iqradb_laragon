@@ -7,7 +7,6 @@ use App\Controllers\News;
 /**
  * @var RouteCollection $routes
  */
-$routes->resource('tags');
 
 // API Routes
 $routes->group("api", ["namespace" => "App\Controllers"], function ($routes) {
@@ -24,8 +23,11 @@ $routes->group("api", ["namespace" => "App\Controllers"], function ($routes) {
     $routes->get("profile", "AuthController::profile", ["filter" => "apiauth"]);
 
     // Get
-    $routes->get("logout", "AuthController::logout", ["filter" => "apiauth"]);
+    $routes->get("logout", "AuthController::logout", ["filter" => "apiauth"]);    
 });
+
+// Tags resource
+    $routes->resource('tags',['filter' => 'apiauth']);
 
 /* $routes->get('/', 'Home::index');
 
