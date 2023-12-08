@@ -24,10 +24,13 @@ $routes->group("api", ["namespace" => "App\Controllers"], function ($routes) {
 
     // Get
     $routes->get("logout", "AuthController::logout", ["filter" => "apiauth"]);    
+
+    // Tags resource
+    $routes->resource('tags',['filter' => 'cors']);
 });
 
-// Tags resource
-    $routes->resource('tags',['filter' => 'apiauth']);
+// Tags resource    
+    // $routes->resource('tags');
 
 /* $routes->get('/', 'Home::index');
 
