@@ -4,7 +4,7 @@ import DataTable from 'react-data-table-component';
 
 const TagsDataTable = () => {
   const [data, setData] = useState([]);
-  const token = 'c8b7c80adda748dc288c31e5d95247d007b45ea11fee7af4c957d7d252c5650c';
+  // const token = 'c8b7c80adda748dc288c31e5d95247d007b45ea11fee7af4c957d7d252c5650c';
   const totalLimit = 1000;
   const totalPage = 1;
 
