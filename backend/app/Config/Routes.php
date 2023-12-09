@@ -27,6 +27,9 @@ $routes->group("api", ["namespace" => "App\Controllers"], function ($routes) {
 
     // Tags resource
     $routes->resource('tags',['filter' => 'cors']);
+
+    // Tags resource
+    $routes->resource('loops',['filter' => 'cors']);
 });
 
 // Tags resource    

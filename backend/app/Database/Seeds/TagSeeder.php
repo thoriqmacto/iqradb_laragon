@@ -55,7 +55,7 @@ class TagSeeder extends Seeder
             'tag_state_on' ,
             'tag_state_off' ,
             'loop_id' ,
-            'cms_system_number_id' ,
+            'cms_system_id' ,
             'cms_system_number' ,
             'unit_number' ,
             'spi_cmpnt_id' ,
