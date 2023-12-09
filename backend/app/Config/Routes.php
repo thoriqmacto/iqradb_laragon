@@ -28,21 +28,18 @@ $routes->group("api", ["namespace" => "App\Controllers"], function ($routes) {
     // Tags resource
     $routes->resource('tags',['filter' => 'cors']);
 
-    // Tags resource
+    // Loops resource
     $routes->resource('loops',['filter' => 'cors']);
 });
 
-// Tags resource    
-    // $routes->resource('tags');
+$routes->get('/', 'Home::index');
 
-/* $routes->get('/', 'Home::index');
+// $routes->get('news', [News::class, 'index']);
+// $routes->get('news/new', [News::class, 'new']);
+// $routes->post('news', [News::class, 'create']);
+// $routes->get('news/(:segment)', [News::class, 'show']);
 
-$routes->get('news', [News::class, 'index']);
-$routes->get('news/new', [News::class, 'new']);
-$routes->post('news', [News::class, 'create']);
-$routes->get('news/(:segment)', [News::class, 'show']);
+// $routes->get('pages',[Pages::class,'index']);
 
-$routes->get('pages',[Pages::class,'index']);
-
-service('auth')->routes($routes);
-$routes->get('(:segment)',[Pages::class,'view']); */
+// service('auth')->routes($routes);
+// $routes->get('(:segment)',[Pages::class,'view']);
