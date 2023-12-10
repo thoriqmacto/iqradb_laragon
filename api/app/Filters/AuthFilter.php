@@ -28,7 +28,7 @@ class AuthFilter implements FilterInterface
         helper("auth");
 
         if (!auth("tokens")->loggedIn()) {
-            return redirect()->to(base_url("api/invalid-access"));
+            return redirect()->to(base_url("invalid-access"));
         }
     }
 
