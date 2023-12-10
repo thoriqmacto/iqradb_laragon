@@ -9,28 +9,28 @@ use App\Controllers\News;
  */
 
 // API Routes
-$routes->group("api", ["namespace" => "App\Controllers"], function ($routes) {
+// $routes->group("api", ["namespace" => "App\Controllers"], function ($routes) {
 
-    $routes->get("invalid-access", "AuthController::accessDenied");
+//     $routes->get("invalid-access", "AuthController::accessDenied");
 
-    // Post
-    $routes->post("register", "AuthController::register");
+//     // Post
+//     $routes->post("register", "AuthController::register");
 
-    // Post
-    $routes->post("login", "AuthController::login");
+//     // Post
+//     $routes->post("login", "AuthController::login");
 
-    // Get
-    $routes->get("profile", "AuthController::profile", ["filter" => "apiauth"]);
+//     // Get
+//     $routes->get("profile", "AuthController::profile", ["filter" => "apiauth"]);
 
-    // Get
-    $routes->get("logout", "AuthController::logout", ["filter" => "apiauth"]);    
+//     // Get
+//     $routes->get("logout", "AuthController::logout", ["filter" => "apiauth"]);    
 
-    // Tags resource
-    $routes->resource('tags',['filter' => 'cors']);
+//     // Tags resource
+//     $routes->resource('tags',['filter' => 'cors']);
 
-    // Loops resource
-    $routes->resource('loops',['filter' => 'cors']);
-});
+//     // Loops resource
+//     $routes->resource('loops',['filter' => 'cors']);
+// });
 
 $routes->get('/', 'Home::index');
 
